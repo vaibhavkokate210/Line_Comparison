@@ -13,6 +13,13 @@ public class LineComparison {
 	        	System.out.println("lines are equal");
 	        else
 	        	System.out.println("lines are not equal");
+	        int compareResult = Integer.toString(lineOneLength).compareTo(Integer.toString(lineTwoLength)); //UC3
+			if(compareResult==0)
+				System.out.println("lines are equals");
+			else if(compareResult>0)
+				System.out.println("Lines 1 is greater");
+			else
+				System.out.println("Line 2 is greater");
 	}
 
 }
