@@ -8,6 +8,11 @@ public class LineComparison {
 			int lineOneLength=(int) Math.sqrt((y1-x1)^2+(y2-x2)^2);
 			int lineTwoLength=(int) Math.sqrt((y3-x3)^2+(y4-x4)^2); //UC1
 			System.out.println(lineOneLength+"  "+lineTwoLength);
+			boolean result=Integer.toString(lineOneLength).equals(Integer.toString(lineTwoLength)); //UC2
+	        if(result)
+	        	System.out.println("lines are equal");
+	        else
+	        	System.out.println("lines are not equal");
 	}
 
 }
